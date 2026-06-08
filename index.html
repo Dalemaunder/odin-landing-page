@@ -1,73 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="header">    
-	<ul>
-	    <li>Header Logo</li>
-	    <li><a href="#">header link one</li>
-	    <li><a href="#">header link two</li>
-	    <li><a href="#">header link three</li>
-	</ul>
-    </div>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Landing Page</title>
+	<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+	<div id="header">    
+	    <ul>
+		<li class="logo">Header Logo</li>
+		<li><a href="#">header link one</a></li>
+		<li><a href="#">header link two</a></li>
+		<li><a href="#">header link three</a></li>
+	    </ul>
+	</div>
 
-    <div class="greeting">
-	<div>
-	<h1>This website is awesome</h1>
-	This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast
+	<div id="greeting">
+	    <div class="greeting-text flex-column">
+		<h1>This website is awesome</h1>
+		This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast
+		<button type="button">Sign up</button>
+	    </div>
+	    <div>
+		<img src="" alt="A description of the image">
+	    </div>
 	</div>
-	<button type="button">Sign up</button>
-	<div>
-	    <img src="" alt="A description of the image">
-	</div>
-    </div>
 
 
-    <div class="info">
-	<h1>Some random information.</h1>
-	<div class="card">
-	    <div class="card-image"><img src="" alt="Example image alt text"></div>
-	    this is some subtext under an illustration or image
+	<div id="info" class="flex-column">
+	    <h1>Some random information.</h1>
+	    <div class="cards">
+		<div class="card">
+		    <img class="card-image" height="100" width="150" src="" alt="Example image alt text">
+		    this is some subtext under an illustration or image
+		</div>
+		<div class="card">
+		    <img class="card-image" src="" alt="Example image alt text">
+		    this is some subtext under an illustration or image
+		</div>
+		<div class="card">
+		    <img class="card-image" src="" alt="Example image alt text">
+		    this is some subtext under an illustration or image
+		</div>
+		<div class="card">
+		    <img class="card-image" src="" alt="Example image alt text">
+		    this is some subtext under an illustration or image
+		</div>
+	    </div>
 	</div>
-	<div class="card">
-	    <div class="card-image"><img src="" alt="Example image alt text"></div>
-	    this is some subtext under an illustration or image
-	</div>
-	<div class="card">
-	    <div class="card-image"><img src="" alt="Example image alt text"></div>
-	    this is some subtext under an illustration or image
-	</div>
-	<div class="card">
-	    <div class="card-image"><img src="" alt="Example image alt text"></div>
-	    this is some subtext under an illustration or image
-	</div>
-    </div>
 
-    <div class="quote">
-	<div class="quote-text">
-	    This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that is looks nice.
+	<div id="quote" class="flex-column">
+	    <div class="quote-text">
+		This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that is looks nice.
+	    </div>
+	    <div class="quote-attribution">
+		- Thor, God of Thunder
+	    </div>
 	</div>
-	<div class="quote-attribution">
-	    - Thor, God of Thunder
-	</div>
-    </div>
 
-    <div class="sign-up">
-	<div class="sign-up-text">
-	    Call to action! It's time!
-	    Sign up for our product by clicking that button right over there!
-	<div class="sign-up-button"
-	    <button type="button">Sign up</button>
+	<div id="sign-up">
+	    <div class="sign-up-box">
+		<div class="flex-column">
+		    <div class="sign-up-title">
+			Call to action! It's time!
+		    </div>
+		    <div class="sign-up-text">
+			Sign up for our product by clicking that button right over there!
+		    </div>
+		</div>
+		<button class="sign-up-button" type="button">Sign up</button>
+	    </div>
 	</div>
-    </div>
 
-    <div class="footer">
-	Copyright © Dale Maunder 2026
-    </div>
-</body>
+	<div id="footer">
+	    Copyright © Dale Maunder 2026
+	</div>
+    </body>
 </html>
