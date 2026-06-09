@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+:root {
+    --dark-background: #1f2937;
+    --off-white: #e5e7eb;
+    --light-logo:#f9faf8;
+    --dark-header: #1f2937;
+    --brand-blue: #3882F6;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -27,11 +35,11 @@ body {
     flex: 3 1 auto;
 }
 #header, #footer, #greeting {
-    background-color: #1F2937;
+    background-color: var(--dark-background);
 }
 
 #header {
-    color: #e5e7eb;
+    color: var(--off-white);
 }
 
 #header > ul {
@@ -46,7 +54,7 @@ body {
 #header a {
     text-decoration: none;
     font-size: 18px;
-    color: #e5e7eb;
+    color: var(--off-white);
 }
 
 #header h1 {
@@ -56,7 +64,7 @@ body {
 
 .logo {
     margin-right: auto;
-    color: #f9faf8;
+    color: var(light-logo);
     font-size: 24px;
     font-weight: 900;
 }
@@ -68,7 +76,7 @@ body {
     align-items: center;
     padding: 0 10vw;
     font-size: 18px;
-    color: #e5e7eb;
+    color: var(--off-white);
 }
 
 #greeting img {
@@ -89,7 +97,7 @@ body {
 
 #info h1 {
     font-size: 36px;
-    color: #1f2937;
+    color: var(--dark-header);
     font-weight: 900;
     padding: 1em;
 }
@@ -114,15 +122,15 @@ body {
     height: 150px;
     border: 3px;
     border-style: solid;
-    border-color: #3882F6;
+    border-color: var(--brand-blue);
     border-radius: 10px;
     display: block;
 }
 
 #quote {
-    background-color: #e5e7eb;
+    background-color: var(--off-white);
     font-size: 36px;
-    color: #1f2937;
+    color: var(--dark-header);
     padding: 3vw 10vw;
 }
 
@@ -146,11 +154,11 @@ body {
 .sign-up-box {
     display: flex;
     gap: 8em;
-    background-color: #3882F6;
+    background-color: var(--brand-blue);
     border-radius: 10px;
     padding: 3em 6em;
     color: white;
-    border-color: #3882F6;
+    border-color: var(--brand-blue);
 }
 
 .sign-up-title {
@@ -159,7 +167,7 @@ body {
 }
 
 #greeting button {
-    border-color: #3882F6;
+    border-color: var(--brand-blue);
 }
 #sign-up button {
     border-color: white;
@@ -174,7 +182,7 @@ body {
 
 button {
     color: white;
-    background-color: #3882F6;
+    background-color: var(--brand-blue);
     width: 90px;
     border-radius: 5px;
     padding: 5px;
